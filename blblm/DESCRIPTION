@@ -1,0 +1,28 @@
+Package: blblm
+Type: Package
+Title: Bag of Little Bootstraps for Regression
+Version: 0.1.0
+Author: Alejandro Medina
+Maintainer: Alejandro Medina <axmedina@ucdavis.edu>
+Description: This package includes many of the functions featured in the lm function.
+    What differs between the functions provided in this package and lm is that this package
+    runs the lm function using bag of little bootstraps. The fucntions allows for single core
+    and multi-core use and allows the users to pick the number of splits and bootstraps to be done
+    on the data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown,
+    tidyverse,
+    future
+Imports: 
+    purrr,
+    magrittr,
+    parallel,
+    furrr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
